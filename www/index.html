@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="cv2.css">
-    <!--<link rel="stylesheet" type="text/css" href="footer.css">-->
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://kit.fontawesome.com/43b1f89082.js" crossorigin="anonymous"></script>
 
@@ -18,15 +18,17 @@
         <img src="imagens\header.jpg" alt="Header">
     </div>
 
-    <div class="topnav">
-        <a href="index.html">Inicio</a>
-        <a href="formacao.html">Formação</a>
-        <a href="cv.html">CV</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="outros.html">Outros</a>
-        <a href="skills.html">Skills</a>
-    </div>
+    <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="formacao.html" >Formação</a>
+            <a href="cv.html">CV</a>
+            <a href="projetos.html" >Projetos</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="skills.html">Skills</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
     <div class="main-containner">
         <h1>Página Pessoal</h1>
@@ -50,7 +52,6 @@
                     <li><a href="formacao.html">Formação</a></li>
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="outros.html">Outros</a></li>
                     <li><a href="skills.html">Skills</a></li>
                 </ul>
             </div>
@@ -63,6 +64,16 @@
             </div>
         </div>
     </footer>
+    <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 
 
 </body>

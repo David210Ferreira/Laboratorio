@@ -6,8 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="cv2.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <script src="https://kit.fontawesome.com/43b1f89082.js" crossorigin="anonymous"></script>
-
+    <style>
+            .row .column img {
+                border: 4px solid #021a40;
+                border-radius: 50%;
+            }
+        </style>
 </head>
 
 <body>
@@ -16,15 +22,17 @@
         <img src="imagens\header.jpg" alt="Header">
     </div>
 
-    <div class="topnav">
-        <a href="index.html">Inicio</a>
-        <a href="formacao.html">Formação</a>
-        <a href="cv.html">CV</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="hobbies.html">Hobbies</a>
-        <a href="outros.html">Outros</a>
-        <a href="skills.html">Skills</a>
-    </div>
+    <div class="topnav" id="myTopnav">
+            <a href="index.html">Inicio</a>
+            <a href="formacao.html">Formação</a>
+            <a href="cv.html">CV</a>
+            <a href="projetos.html" >Projetos</a>
+            <a href="hobbies.html" class="active">Hobbies</a>
+            <a href="skills.html">Skills</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
     <div class="row">
         <div class="column">
@@ -32,23 +40,22 @@
         </div>
 
         <div class="column">
-            <h2>Informações Pessoais</h2>
-            <p><b>Nome Completo: </b>David José dos Santos Ferreira</p>
-            <p><b>Sexo: </b>Masculino</p>
-            <p><b>Data de Nascimento: </b>02/10/1999</p>
-            <p><b>Idade: </b>20 anos</p>
-            <p><b>Contactos: </b>+351 938878018</p>
-        </div>
+            <h2>Hobbies e Outros interesses pessoais </h2>
+            <p><b>Hobbies: </b>Ir ao ginásio, Praia e Jogar no computador </p>
+            <p><b>Desportos: </b>Bodyboard, Futebol e Badmínton </p>
+            <p><b>Series Favoritas: </b>"How i met your mother", "The 100" e "Prison Break" </p>
+            <p><b>Filmes Favoritos: </b>"Avengers: Engame", "Now You See Me" e "Pacific Rim" </p>
+            <p><b>Estilos de Musica: </b>Hip-Hop, EDM e Trance </p>
+            <p><b>Refeições Favoritas: </b>"Arroz de Pato", "Pizza" e "Hambúrguer" </p>
+            <p><b>Jogos Favoritos: </b>"League of Legends", "FIFA" e "Terraria" </p>
+            <p><b>Musícos Favoritos: </b>Sam The Kid, X-Tense e Timmy Trumpet </p>
+            
 
-        <div class="column">
-            <h2>Competencias</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
-                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
-                aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor
-                sed accumsan convallis.</p>
+            
+
         </div>
     </div>
-    <footer>
+    <div class="footer-index">
         <div class="row">
             <div class="column">
                 <h2>Contactos</h2>
@@ -62,7 +69,6 @@
                     <li><a href="formacao.html">Formação</a></li>
                     <li><a href="cv.html">CV</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="outros.html">Outros</a></li>
                     <li><a href="skills.html">Skills</a></li>
                 </ul>
             </div>
@@ -75,8 +81,17 @@
             </div>
         </div>
         </div>
-    </footer>
-
+    </div>
+    <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
 </body>
 
 </html>
