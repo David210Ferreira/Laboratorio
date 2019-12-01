@@ -1,4 +1,4 @@
-.main-containner{
+.main-containner {
     margin: auto;
     width: 50%;
     /*align-items: center;
@@ -11,8 +11,82 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:40%; 
+    width: 40%;
     height: 55%;
     border-radius: 50%;
-    border:4px solid #021a40;
+    border: 4px solid #021a40;
 }
+/*
+@keyframes mover-aumentar {
+    
+    from {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 140px;
+        width: 180px;
+    }
+   
+    25% {
+        position: fixed;
+        top: calc(50vh - 70px);
+        left: calc(50vw - 90px);
+        display: block;
+        height: 140px;
+        width: 180px;
+    }
+
+    50% {
+        position: fixed;
+        top: calc(50vh - 140px);
+        left: calc(50vw - 180px);
+        display: block;
+        height: 280px;
+        width: 360px;
+
+    }
+
+    75% {
+        position: fixed;
+        top: calc(50vh - 70px);
+        left: calc(50vw - 90px);
+        display: block;
+        height: 140px;
+        width: 180px;
+    }
+   
+    to {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 140px;
+        width: 180px;
+    }
+
+
+}
+ */
+
+/*.main-containner img:hover {
+    animation-name: mover-aumentar;
+    animation-duration: 5s;
+}*/
+
+@keyframes esconder {
+    from {
+    opacity: 1.0;
+    }
+    to {
+    opacity: 0.0;
+    }
+}
+    
+#aviso {
+    animation-name: esconder;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+    }
+    
